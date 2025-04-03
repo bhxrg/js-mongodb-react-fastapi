@@ -1,0 +1,109 @@
+/* Dark background for the whole page */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centering the To-Do List in a dark grey container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222; /* Darker grey */
+}
+
+/* Grey To-Do List Box */
+.to-do-list {
+  text-align: center;
+  background: #333; /* Dark Grey */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+/* Buttons */
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  background-color: hsl(125, 47%, 54%);
+}
+
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
+}
+
+.delete-button {
+  background-color: hsl(186, 90%, 50%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+
+.move-button {
+  background-color: hsl(207, 90%, 64%);
+}
+
+.move-button:hover {
+  background-color: hsl(207, 90%, 54%);
+}
+
+/* Input Field */
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: white;
+  background-color: #444; /* Darker Grey */
+}
+
+/* List Styling */
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #555; /* Medium Grey */
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* List Item Text */
+.text {
+  flex: 1;
+}
+
+/* Button inside List */
+.delete-button,
+.move-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
