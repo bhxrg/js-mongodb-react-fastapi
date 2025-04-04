@@ -1,0 +1,32 @@
+body {
+    background-image: url(assets/background-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Ensures the body covers the full viewport height */
+}
+
+.clock-container {
+    backdrop-filter: blur(1px); /* Increased blur for better visibility */
+    padding: 20px;
+    position: absolute;
+    width:100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.clock {
+    color: white;
+    font-size: 8vw; /* Responsive font size based on viewport width */
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+    white-space: nowrap; /* Prevents text from breaking */
+}
