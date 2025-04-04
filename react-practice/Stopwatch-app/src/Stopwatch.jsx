@@ -41,6 +41,9 @@ function Stopwatch() {
         let minutes = Math.floor(elapsedTime / (1000 * 60) % 60)
         let seconds = Math.floor(elapsedTime / (1000) % 60)
         let milliseconds = Math.floor((elapsedTime % 1000) / 10)
+
+        //also can write like 
+        // hours = String(hours).padStart(2, "0")...
         return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}:${padZero(milliseconds)}`;
     }
 
